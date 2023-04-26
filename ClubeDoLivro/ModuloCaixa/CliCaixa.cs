@@ -53,6 +53,8 @@ namespace ClubeDoLivro.ModuloCaixa
 
             repositorioCaixa.GravarCaixa(idCaixa, "INSERIR", caixa.cor, caixa.etiqueta);
 
+            repositorioCaixa.GravarCaixa(idCaixa, "INSERIR", caixa);
+
             Program.IncrementarId(repositorioCaixa.ContadorDeCaixas);
 
             Program.ApresentarMensagem("Caixa inserido com sucesso!", ConsoleColor.Green);
